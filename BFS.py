@@ -12,7 +12,7 @@ def bfs(graph, start):
                 visited.add(res)
 
 Graph = {}
-n = int(input("Enter no. of vertex: "))
+n = int(input("Enter no. of vertices: "))
 for i in range(n):
     a = input() # key
     b = input().split() # val

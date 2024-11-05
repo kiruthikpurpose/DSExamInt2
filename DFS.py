@@ -7,14 +7,14 @@ def dfs(graph, start):
         print(temp, end=" ")
 
 
-        for neighbor in reversed(graph[temp]): 
+        for neighbor in reversed(graph): 
             if neighbor not in visited:
                 stack.append(neighbor)
                 visited.add(neighbor)
 
 # Input graph as per your format
 Graph = {}
-n = int(input("Enter no.of vertex: "))  # Number of vertices
+n = int(input("Enter no. of vertices: "))  # Number of vertices
 for i in range(n):
     a = input()  # Vertex
     b = input().split()  # Neighbors
