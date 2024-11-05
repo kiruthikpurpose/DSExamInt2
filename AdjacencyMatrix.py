@@ -1,6 +1,6 @@
 arr = []
 vertices = int(input())
-edges = int (input())
+edges = int(input())
 
 for i in range(vertices):
     arr.append([0 for i in range(vertices)])
