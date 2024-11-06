@@ -29,6 +29,6 @@ if __name__ == '__main__':
     root_element = int(input())
     tree_try = BinaryTree(root_element)
     n = list(map(int, input().split()))
-    for i in range(len(n)):
-        tree_try.insertNode(n[i])
+    for i in n:
+        tree_try.insertNode(i)
     print("Tree structure successfully built!")
