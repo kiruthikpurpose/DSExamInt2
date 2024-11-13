@@ -1,26 +1,24 @@
 def dfs(graph, start):
-    stack = [start]  # Initialize the stack with the starting vertex
-    visited = {start}  # Keep track of visited nodes
+    stack = [start]
+    visited = {start}
 
-    while stack:
+    while len(stack) > 0:
         temp = stack.pop()
         print(temp, end=" ")
 
+        for res in reversed(graph):
+            if res not in visited:
+                stack.append(res)
+                visited.add(res)
 
-        for neighbor in reversed(graph): 
-            if neighbor not in visited:
-                stack.append(neighbor)
-                visited.add(neighbor)
-
-# Input graph as per your format
 Graph = {}
-n = int(input("Enter no. of vertices: "))  # Number of vertices
+n = int(input("Enter no. of vertices: "))
 for i in range(n):
-    a = input()  # Vertex
-    b = input().split()  # Neighbors
-    Graph[a] = b  # Store vertex and its neighbors
+    a = input() # KEY
+    b = input().split() # VALUES
+    Graph[a] = b
 
 st = input("Enter start element: ")
 print()
-dfs(Graph, st)  # Call DFS starting from the given start vertex
+dfs(Graph, st)
 print()

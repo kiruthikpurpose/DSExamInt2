@@ -14,8 +14,8 @@ def bfs(graph, start):
 Graph = {}
 n = int(input("Enter no. of vertices: "))
 for i in range(n):
-    a = input() # key
-    b = input().split() # val
+    a = input() # KEY
+    b = input().split() # VALUES
     Graph[a] = b
 
 st = input("Enter start element: ")
