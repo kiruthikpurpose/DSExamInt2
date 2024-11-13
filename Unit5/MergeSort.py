@@ -27,3 +27,7 @@ def merge_sort(arr):
             arr[k] = right_half[j]
             j += 1
             k += 1
+
+arr = [1, 4, 3, 8, 2]
+merge_sort(arr)
+print(arr)
