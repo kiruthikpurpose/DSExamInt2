@@ -1,9 +1,7 @@
-arr = []
 vertices = int(input())
 edges = int(input())
 
-for i in range(vertices):
-    arr.append([0 for i in range(vertices)])
+arr = ([0 for i in range(vertices)] for i in range(vertices))
 
 for i in range(edges):
     a, b = map(int, input().split())
